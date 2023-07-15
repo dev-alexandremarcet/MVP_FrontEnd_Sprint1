@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <link rel="stylesheet" href="styles.css">
+
+    <title>Secretaria Escolar (Cadastro Simplificado)</title>
+</head>
+
+<body>
+     <!-- Título do sistema de Cadastro de Alunos-->
+    <header>
+        <div class="title">
+            <h2>Secretaria Escolar (Cadastro Simplificado de Alunos)</h2>
+        </div>
+    </header>
+    <br><br><br>
+    <form class="formCadastro">
+    <fieldset><legend><b>Cadastrar Novo Aluno</b></legend>
+        <!-- Cadastra um novo aluno à base de dados -->
+        <fieldset><legend><b>Informações do Aluno</b></legend>
+           <section class="newAluno">
+            <input type="text" id="newNumMatricula" placeholder="Matrícula (6 dígitos)" maxlength="6">
+            <input type="text" id="newNomeAluno" placeholder="Aluno">
+            <input type="text" id="newTurmaAluno" maxlength="3" placeholder="Turma (3 dígitos)">
+           </section>
+        </fieldset>
+        <fieldset><legend><b>Informações do Responsável</b></legend>
+            <section class="newAluno">
+            <input type="text" id="newNomeResponsavel" placeholder="Nome">
+            <input type="text" id="newCPFResponsavel" placeholder="CPF (apenas dígitos)" maxlength="11">
+            <input type="text" id="newTelResponsavel" placeholder="Telefone com DDD" maxlength="11">
+            <br>
+            </section>
+         </fieldset>
+         <br>
+         <span onclick="newItem()" class="addBtn">Adicionar</span>
+        <br><br>
+    </fieldset>
+    </form>
+    <br><br><br>
+    <form class="formPesquisar">
+    <fieldset><legend><b>Pesquisar Aluno</b></legend>
+        <!-- Pesquisa por um aluno na base de dados -->
+           <input type="text" id="pesqNumMatricula" placeholder="Matrícula (6 dígitos)" maxlength="6">
+           <span onclick="getAluno()" class="pesqBtn">Pesquisar</span>
+           <br>
+           <br>
+           <fieldset><legend><b>Aluno pesquisado</b></legend>
+            <section class="items">
+                <table id="tblPesquisa">
+                    <tr>
+                        <th>Número de Matrícula</th>
+                        <th>Nome do Aluno</th>
+                        <th>Turma do Aluno</th>
+                        <th>Nome do Responsável</th>
+                        <th>CPF do Responsável</th>
+                        <th>Telefone do Responsável</th>
+                    </tr>
+                </table>
+            </section>
+           </fieldset>
+           <br>
+         <span onclick="LimpaListPesquisa()" class="pesqBtn">Limpar Pesquisa</span>
+        <br><br>
+    </fieldset>
+    </form>
+    <br>
+    <br>
+    <br>      
+    <!-- Lista com os alunos cadastrados na base de dados -->
+    <form class="formListagem">
+    <fieldset><legend><b>Listagem dos Alunos Cadastrados</b></legend>
+        <section class="items">
+            <table id="tblListAlunos">
+                <tr>
+                    <th>Número de Matrícula</th>
+                    <th>Nome do Aluno</th>
+                    <th>Turma do Aluno</th>
+                    <th>Nome do Responsável</th>
+                    <th>CPF do Responsável</th>
+                    <th>Telefone do Responsável</th>
+                    <th><img src="https://cdn-icons-png.flaticon.com/512/126/126468.png" width="20px" height="20px"></th>
+                </tr>
+            </table>
+        </section>
+    </fieldset>
+    </form>
+    <script src="scripts.js"></script>
+</body>
+
+</html>
+
+

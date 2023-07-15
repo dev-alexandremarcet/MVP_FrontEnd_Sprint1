@@ -1,0 +1,143 @@
+body,
+ul,
+li {
+    font-family: Verdana, Geneva, Tahoma, Verdana, Geneva, Tahoma, sans-serif;
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    background-color: rgb(133, 170, 150);
+}
+
+header {
+    background-color: rgb(133, 170, 150);
+    text-align: center;
+    position: relative;
+    width: 100%;
+}
+
+.formCadastro{
+    background-color: rgb(85, 128, 85);
+}
+
+.formPesquisar{
+    background-color: rgb(85, 128, 85);
+}
+
+.formListagem{
+    background-color: rgb(85, 128, 85);
+}
+
+.title {
+    color: white;
+    width: 100%;
+    background-color: rgba(10, 78, 44, 0.89);
+    display: inline-block;
+    padding: 10px 10px;
+    position: sticky;
+    top: 0px;
+}
+
+.newAluno {
+    background-color: rgb(85, 128, 85);
+    padding: 10px 10px;
+    color: rgb(0, 0, 0);
+    font-size: 16px;
+}
+
+.newItem {
+    background-color: rgb(253, 253, 253);
+    padding: 10px 10px;
+    color: rgb(0, 0, 0);
+    display:flex;
+    font-size: 16px;
+    justify-content: center;
+}
+
+.newItem:after {
+    content: "";
+    display: table;
+    clear: both;
+}
+
+.addBtn {
+    padding: 9px 10px;
+    background-color: rgb(2, 53, 22);
+    color: white;
+    text-align: center;
+    font-size: 16px;
+    cursor: pointer;
+    transition: 0.3s;
+    border-radius: 2px;
+}
+
+.addBtn:hover {
+    background-color: #2ab53a;
+    color: white;
+}
+
+.pesqBtn {
+    padding: 9px 10px;
+    background-color: rgb(2, 53, 22);
+    color: white;
+    text-align: center;
+    font-size: 16px;
+    cursor: pointer;
+    transition: 0.3s;
+    border-radius: 2px;
+}
+
+.pesqBtn:hover {
+    background-color: #2ab53a;
+    color: white;
+}
+
+.items {
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+}
+
+.close:hover {
+    color: #f44336;
+    font-weight: bolder;
+}
+
+.linha {
+    flex-flow: row wrap;
+    padding:10px; 
+}
+  
+.coluna-50 {
+    width: 50%;
+}
+
+table,
+th,
+td {
+    border: 2px solid black;
+    border-collapse: collapse;
+    cursor: pointer;
+    position: relative;
+    padding: 5px 20px 5px 10px;
+    font-size: 16px;
+    transition: 0.2s;
+    text-align: start;
+}
+
+table{
+    background-color: white;
+    width: 90%;
+}
+
+tr:nth-child(odd){
+    background-color: #eee;
+}
+
+th:nth-child(1){
+    width: 80%;
+}
+
+tr:hover {
+    background: rgb(200, 199, 199);
+}
